@@ -5,6 +5,9 @@ public:
         int m = matrix.size();
         int n = matrix[0].size();
         vector<int> result;
+        if(matrix.empty()){
+            return result;
+        }
 
         int top = 0, right = n-1, bottom = m-1, left = 0;
         while(result.size() < m*n){
